@@ -82,8 +82,24 @@ def july():
     elif mc.get()=='song':
         os.startfile('C:\\Users\\adity\\Desktop\\turtle\\j.mp3')
     elif mc.get()=='day':
-        j.say('today is day '+ time.strftime('%A'))
+        j.say('today is'+ time.strftime('%A'))
         j.runAndWait()
+    elif mc.get()=='month':
+        j.say('month is'+time.strftime('%B'))
+        j.runAndWait()
+    elif mc.get()=='microsoft word':
+        j.say('here found boss')
+        j.runAndWait()
+        os.startfile("C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE")
+    elif mc.get()=='microsoft powerpoint':
+        j.say('here found boss')
+        j.runAndWait()
+        os.startfile("C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE")
+    elif mc.get()=='microsoft excel':
+        j.say('here found boss')
+        j.runAndWait()
+        os.startfile("C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE")
+        
 btn=Button(rt,text='Speak',bg='red',fg='white',width=21,font='Arial 20 bold',command=july)
 btn.place(x=111,y=200)
 vb=Button(rt,text='Select',width=21,bg='yellow',fg='purple',command=vp)
